@@ -1,15 +1,15 @@
 <template>
-  <div class="employeesCarousel">
+  <div class="projectsCarousel">
     <div class="body">
       <div class="slider" :style="'transform: translateX(-' + offset + ');'">
         <div
-            v-for="(employee, index) in employers"
-            style="display: inline;"
-            :key="index">
-          <Employee
-            :name="employee.name"
-            :description="employee.description"
-            :image="employee.image" />
+            v-for="(project, index) in projects"
+            :key="index"
+            style="display: inline;">
+          <Project
+            :image="project.image"
+            :name="project.name"
+            :description="project.description" />
           <div class="space"></div>
         </div>
       </div>
@@ -52,15 +52,14 @@
 </template>
 
 <script>
+  import Project from "@/components/projects/Project";
   const SMALL = 1, MEDIUM = 2, LARGE = 3, EXTRA_LARGE = 4
 
-  import Employee from "@/components/employees/Employee";
-
   export default {
-    name: "Carousel",
-    components: {Employee},
+    name: "ProjectsCarousel",
+    components: {Project},
     props: {
-      employers: {
+      projects: {
         type: Array,
         required: true,
       }
@@ -83,16 +82,16 @@
 
         switch (this.mode) {
           case EXTRA_LARGE:
-            result = this.currentPosition * 294 + 'px';
+            result = this.currentPosition * 385 + 'px';
             break;
           case LARGE:
-            result = this.currentPosition * 330 + 'px';
+            result = this.currentPosition * 325 + 'px';
             break;
           case MEDIUM:
-            result = this.currentPosition * 396 + 'px';
+            result = this.currentPosition * 370 + 'px';
             break;
           case SMALL:
-            result = this.currentPosition * 110 + 'vw';
+            result = this.currentPosition * 100 + 'vw';
             break;
           default:
             break;
@@ -103,8 +102,12 @@
     },
     methods: {
       setMaximalPosition(mode) {
-        this.maximalPosition = Math.max(0, this.count - mode);
         this.mode = mode;
+        if (mode === EXTRA_LARGE) {
+          mode--;
+        }
+
+        this.maximalPosition = Math.max(0, this.count - mode);
       },
       moveLeft() {
         this.currentPosition--;
@@ -116,7 +119,7 @@
         let viewportWidth = window.innerWidth;
         let sizes = this.$store.getters.getScreenSizes;
 
-        this.count = this.employers.length;
+        this.count = this.projects.length;
 
         if (viewportWidth >= sizes.extra_large) {
           this.setMaximalPosition(EXTRA_LARGE);
@@ -136,7 +139,7 @@
 </script>
 
 <style scoped lang="scss">
-.employeesCarousel {
+.projectsCarousel {
   width: 100%;
   margin-bottom: 36px;
   .arrow {
@@ -155,13 +158,10 @@
         display: inline-block;
         width: 10vw;
         @media (min-width: $medium) {
-          width: 72px !important;
-        }
-        @media (min-width: $large) {
           width: 30px !important;
         }
-        @media (min-width: $extra-large) {
-          width: 36px !important;
+        @media (min-width: $large) {
+          width: 25px !important;
         }
       }
     }

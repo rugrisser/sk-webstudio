@@ -25,7 +25,7 @@
             </ButtonSecondary>
           </div>
           <div class="row" style="margin-top: 72px;">
-            <Carousel :employers="employers" />
+            <Carousel :employers="employees" />
           </div>
           <div class="horizontalLine"></div>
           <div class="row" style="margin-top: 36px;">
@@ -84,13 +84,13 @@
             <div class="directionColumn col-12 col-md-6 col-lg-4 col-xl-4">
               <Direction
                   title="Машинное обучение"
-                  description="Простой и эффективный способ быть на связи с любым клиентом. Чат-боты позволяют ответить на вопросы клиента, а при необходимости, помогут связаться со специалистом."
+                  description="Использование алгоритмов машинного обучения позволяет находить закономерность, которая даёт возможность предсказывать различные показатели, что, в свою очередь, приводит к увеличению эффективности компании."
                   image="/img/icons/directions/neural.svg" />
             </div>
             <div class="directionColumn col-12 col-md-6 col-lg-4 col-xl-4">
               <Direction
                   title="Мобильные приложения"
-                  description="Простой и эффективный способ быть на связи с любым клиентом. Чат-боты позволяют ответить на вопросы клиента, а при необходимости, помогут связаться со специалистом."
+                  description="Постоянный, быстрый и недорогой способ связи с Вашими клиентами. Мобильные приложения повышают лояльность клиентов и продажи."
                   image="/img/icons/directions/app.svg" />
             </div>
           </div>
@@ -116,6 +116,9 @@
                   src="/img/icons/go_to.svg" height="16px">
             </ButtonSecondary>
           </div>
+          <div class="row" style="margin-top: 72px;">
+            <ProjectsCarousel :projects="projects" />
+          </div>
         </div>
       </div>
     </Slide>
@@ -128,6 +131,7 @@ import ButtonSecondary from "@/components/buttons/ButtonSecondary";
 import Carousel from "@/components/employees/EmployeesCarousel";
 import SmallFact from "@/components/SmallFact";
 import Direction from "@/components/Direction";
+import ProjectsCarousel from "@/components/projects/ProjectsCarousel";
 
 class Employer {
   constructor(name, description, image) {
@@ -137,9 +141,19 @@ class Employer {
   }
 }
 
+class Project {
+  constructor(name, description, image) {
+    this.name = name;
+    this.description = description;
+    this.image = image;
+  }
+
+}
+
 export default {
   name: 'Home',
   components: {
+    ProjectsCarousel,
     Direction,
     SmallFact,
     Carousel,
@@ -148,31 +162,53 @@ export default {
   },
   data() {
     return {
-      employers: [
+      employees: [
         new Employer(
           'Test',
           'Lorem ipsum dolor',
-          '/img/employee/1.jpg'
+          '/img/employees/1.jpg'
         ),
         new Employer(
           'Test',
           'Lorem ipsum dolor',
-          '/img/employee/2.jpg'
+          '/img/employees/2.jpg'
         ),
         new Employer(
           'Test',
           'Lorem ipsum',
-          '/img/employee/3.jpg'
+          '/img/employees/3.jpg'
         ),
         new Employer(
           'Test',
           'Lorem ipsum dolor',
-          '/img/employee/4.jpg'
+          '/img/employees/4.jpg'
         ),
         new Employer(
           'Test',
           'Lorem ipsum',
-          '/img/employee/5.jpg'
+          '/img/employees/5.jpg'
+        ),
+      ],
+      projects: [
+        new Project(
+          'COVID-19 Application',
+          'Mobile Application',
+          '/img/projects/1.png'
+        ),
+        new Project(
+          'Outli',
+          'Web',
+          '/img/projects/2.jpg'
+        ),
+        new Project(
+          'Messenger',
+          'Mobile Application',
+          '/img/projects/3.png'
+        ),
+        new Project(
+          'Finderr',
+          'Web',
+          '/img/projects/4.png'
         ),
       ],
     }

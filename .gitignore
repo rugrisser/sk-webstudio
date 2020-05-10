@@ -20,4 +20,5 @@ yarn-error.log*
 *.sln
 *.sw?
 
-public/img/employee
+public/img/employees
+public/img/projects
