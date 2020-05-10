@@ -1,5 +1,5 @@
 <template>
-  <div class="smallFact col-2">
+  <div class="smallFact col-6 col-md-4 col-lg-2 col-xl-2">
     <h1>
       {{ value }}
     </h1>
@@ -28,6 +28,7 @@
 <style scoped lang="scss">
   .smallFact {
     text-align: center;
+    margin-bottom: 24px;
     h1 {
       color: $light;
       font-size: 36px;

@@ -54,7 +54,7 @@
 <script>
   const SMALL = 1, MEDIUM = 2, LARGE = 3, EXTRA_LARGE = 4
 
-  import Employee from "@/components/Employee";
+  import Employee from "@/components/employees/Employee";
 
   export default {
     name: "Carousel",
