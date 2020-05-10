@@ -9,7 +9,7 @@
       </div>
     </Slide>
     <Slide style="display: flex;">
-      <div class="container-lg" style="display: flex;">
+      <div class="container " style="display: flex;">
         <div style="width: 100%; margin: auto;">
           <div class="row">
             <span class="smallHeading">
@@ -58,27 +58,27 @@ export default {
       employers: [
         new Employer(
           'Test',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed risus magna. Pellentesque vel molestie erat, sit amet rutrum quam.',
+          'Lorem ipsum dolor',
           '/img/employee/1.jpg'
         ),
         new Employer(
           'Test',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed risus magna. Pellentesque vel molestie erat, sit amet rutrum quam.',
+          'Lorem ipsum dolor',
           '/img/employee/2.jpg'
         ),
         new Employer(
           'Test',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed risus magna. Pellentesque vel molestie erat, sit amet rutrum quam.',
+          'Lorem ipsum',
           '/img/employee/3.jpg'
         ),
         new Employer(
           'Test',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed risus magna. Pellentesque vel molestie erat, sit amet rutrum quam.',
+          'Lorem ipsum dolor',
           '/img/employee/4.jpg'
         ),
         new Employer(
           'Test',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed risus magna. Pellentesque vel molestie erat, sit amet rutrum quam.',
+          'Lorem ipsum',
           '/img/employee/5.jpg'
         ),
       ],

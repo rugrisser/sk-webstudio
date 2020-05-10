@@ -33,13 +33,13 @@
     background-attachment: fixed;
     background-size: cover;
     @media (min-width: $medium) {
-      width: 410px !important;
+      width: 324px !important;
     }
     @media (min-width: $large) {
-      width: 288px !important;
+      width: 300px !important;
     }
     @media (min-width: $extra-large) {
-      width: 274px !important;
+      width: 258px !important;
     }
   }
 </style>
