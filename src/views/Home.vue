@@ -8,7 +8,7 @@
         </div>
       </div>
     </Slide>
-    <Slide style="display: flex;">
+    <Slide style="display: flex; height: 120vh;">
       <div class="container " style="display: flex;">
         <div style="width: 100%; margin: auto;">
           <div class="row">
@@ -27,6 +27,27 @@
           <div class="row" style="margin-top: 72px;">
             <Carousel :employers="employers" />
           </div>
+          <div class="horizontalLine"></div>
+          <div class="row" style="margin-top: 36px;">
+            <SmallFact
+                value="20+"
+                description="человек в команде"/>
+            <SmallFact
+                value="7"
+                description="лет на рынке" />
+            <SmallFact
+                value="800+"
+                description="выполненных проектов" />
+            <SmallFact
+                value="200K"
+                description="просмотров на Behance" />
+            <SmallFact
+                value="0"
+                description="плохих отзывов" />
+            <SmallFact
+                value="4"
+                description="раза я подрочил сегодня" />
+          </div>
         </div>
       </div>
     </Slide>
@@ -37,6 +58,7 @@
 import Slide from "@/components/Slide";
 import ButtonSecondary from "@/components/buttons/ButtonSecondary";
 import Carousel from "@/components/Carousel";
+import SmallFact from "@/components/SmallFact";
 
 class Employer {
   constructor(name, description, image) {
@@ -49,6 +71,7 @@ class Employer {
 export default {
   name: 'Home',
   components: {
+    SmallFact,
     Carousel,
     ButtonSecondary,
     Slide
@@ -129,5 +152,10 @@ export default {
     font-size: 48px;
     font-family: 'Oswald';
     text-transform: uppercase;
+  }
+  .horizontalLine {
+    width: 100%;
+    height: 2px;
+    background-color: $black-lighter;
   }
 </style>

@@ -140,6 +140,7 @@
 <style scoped lang="scss">
 .carousel {
   width: 100%;
+  margin-bottom: 36px;
   .arrow {
     display: inline;
     .activated {
