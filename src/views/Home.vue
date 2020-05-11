@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <NavigationBar start-transparent />
     <Slide class="headSlide">
       <div class="darkBackground">
         <div class="body">
@@ -8,7 +9,7 @@
         </div>
       </div>
     </Slide>
-    <Slide style="display: flex; height: 120vh;">
+    <Slide style="display: flex; height: 120vh;" id="team">
       <div class="container d-flex">
         <div style="width: 100%; margin: auto;">
           <div class="row">
@@ -51,7 +52,7 @@
         </div>
       </div>
     </Slide>
-    <Slide dark style="height: auto; padding: 20vh 0;">
+    <Slide dark style="height: auto; padding: 20vh 0;" id="directions">
       <div class="container d-flex" style="height: 100%;">
         <div style="width: 100%; margin: auto;">
           <div class="row">
@@ -97,7 +98,7 @@
         </div>
       </div>
     </Slide>
-    <Slide>
+    <Slide id="projects">
       <div class="container d-flex" style="height: 100%;">
         <div style="width: 100%; margin: auto;">
           <div class="row">
@@ -165,6 +166,7 @@ import Direction from "@/components/Direction";
 import ProjectsCarousel from "@/components/projects/ProjectsCarousel";
 import ReviewCarousel from "@/components/reviews/ReviewsCarousel";
 import Footer from "@/components/Footer";
+import NavigationBar from "@/components/NavigationBar";
 
 class Employer {
   constructor(name, description, image) {
@@ -194,6 +196,7 @@ class Review {
 export default {
   name: 'Home',
   components: {
+    NavigationBar,
     Footer,
     ReviewCarousel,
     ProjectsCarousel,

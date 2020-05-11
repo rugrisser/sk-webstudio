@@ -18,7 +18,7 @@
           Copyright © 2020.
         </span>
         <span style="margin-left: auto;">
-          +38 (066) 976-8777
+          +7 967 089 88 99
         </span>
       </div>
       <div class="additional row d-flex" style="margin-top: 12px;">
