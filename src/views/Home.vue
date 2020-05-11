@@ -166,9 +166,18 @@
                   </div>
                 </div>
                 <div class="col-6 d-flex">
-                  <img
-                      src="/img/illustrations/contacts.svg"
-                      style="height: 100%; margin: 0 auto;" />
+                  <UAnimateContainer style="margin: 0 auto;">
+                    <UAnimate
+                        delay="0"
+                        duration="1s"
+                        animate-class="animated"
+                        :begin="false"
+                        name="fadeIn">
+                      <img
+                          src="/img/illustrations/contacts.svg"
+                          style="height: 100%;" />
+                    </UAnimate>
+                  </UAnimateContainer>
                 </div>
               </div>
             </div>
