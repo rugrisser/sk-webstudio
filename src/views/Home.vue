@@ -122,6 +122,18 @@
         </div>
       </div>
     </Slide>
+    <Slide dark>
+      <div class="container d-flex" style="height: 100%;">
+        <div style="width: 100%; margin: auto;">
+          <div class="row">
+            <span class="smallHeading">
+              Отзывы
+            </span>
+          </div>
+          <ReviewCarousel :reviews="reviews" />
+        </div>
+      </div>
+    </Slide>
   </div>
 </template>
 
@@ -132,6 +144,7 @@ import Carousel from "@/components/employees/EmployeesCarousel";
 import SmallFact from "@/components/SmallFact";
 import Direction from "@/components/Direction";
 import ProjectsCarousel from "@/components/projects/ProjectsCarousel";
+import ReviewCarousel from "@/components/reviews/ReviewsCarousel";
 
 class Employer {
   constructor(name, description, image) {
@@ -147,12 +160,21 @@ class Project {
     this.description = description;
     this.image = image;
   }
+}
 
+class Review {
+  constructor(author, description, text, avatar) {
+    this.author = author;
+    this.description = description;
+    this.text = text;
+    this.avatar = avatar;
+  }
 }
 
 export default {
   name: 'Home',
   components: {
+    ReviewCarousel,
     ProjectsCarousel,
     Direction,
     SmallFact,
@@ -162,6 +184,16 @@ export default {
   },
   data() {
     return {
+      reviewsCarousel: {
+        count: 0,
+        currentPosition: 0,
+        maximalPosition: 0,
+        mode: 0,
+        arrow: {
+          leftHover: false,
+          rightHover: false,
+        }
+      },
       employees: [
         new Employer(
           'Test',
@@ -209,6 +241,32 @@ export default {
           'Finderr',
           'Web',
           '/img/projects/4.png'
+        ),
+      ],
+      reviews: [
+        new Review(
+          'Ethan James',
+          'CEO Компании',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
+          'https://randomuser.me/api/portraits/men/69.jpg',
+        ),
+        new Review(
+          'Glenda Graham',
+          'CEO Компании',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+          'https://randomuser.me/api/portraits/women/43.jpg',
+        ),
+        new Review(
+          'Jose Kim',
+          'CEO Компании',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis dolor vitae nulla pretium porttitor et sed ante. Donec efficitur sodales condimentum.',
+          'https://randomuser.me/api/portraits/men/13.jpg',
+        ),
+        new Review(
+          'Lester Payne',
+          'CEO Компании',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis consequat justo, sit amet luctus dolor pellentesque eget.',
+          'https://randomuser.me/api/portraits/men/32.jpg',
         ),
       ],
     }
@@ -282,5 +340,14 @@ export default {
   }
   .directionColumn {
     padding: 16px;
+  }
+  .bigArrow {
+    display: inline;
+    img {
+      height: 36px;
+    }
+    .activated {
+      cursor: pointer;
+    }
   }
 </style>

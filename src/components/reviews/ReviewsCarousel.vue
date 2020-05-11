@@ -1,22 +1,11 @@
 <template>
-  <div class="projectsCarousel">
-    <div class="body">
-      <div class="slider" :style="'transform: translateX(-' + offset + ');'">
-        <div
-            v-for="(project, index) in projects"
-            :key="index"
-            style="display: inline;">
-          <Project
-            :image="project.image"
-            :name="project.name"
-            :description="project.description" />
-          <div class="space"></div>
-        </div>
-      </div>
-    </div>
-    <div style="display: flex; margin-top: 36px;">
-      <div style="margin: 0 auto;">
-        <div class="arrow">
+  <div class="reviewsCarousel">
+    <div class="row d-flex">
+      <span class="bigHeading" style="margin: auto 0;">
+        Нам доверяют
+      </span>
+      <div style="margin: auto 0 auto auto;">
+        <div class="bigArrow">
           <img
               @click="moveLeft"
               @mouseover="arrow.leftHover = true"
@@ -31,7 +20,7 @@
               src="/img/icons/arrows/left_hover.svg" />
           <img v-else src="/img/icons/arrows/left_disabled.svg">
         </div>
-        <div class="arrow" style="margin-left: 36px;">
+        <div class="bigArrow" style="margin-left: 72px;">
           <img
               @click="moveRight"
               @mouseover="arrow.rightHover = true"
@@ -48,19 +37,36 @@
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="body">
+        <div class="slider" :style="'transform: translateX(-' + offset + ');'">
+          <div
+              v-for="(review, index) in reviews"
+              :key="index"
+              style=" ">
+            <Review
+                :author="review.author"
+                :description="review.description"
+                :text="review.text"
+                :avatar="review.avatar"/>
+            <div class="space"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
   const SMALL = 1, MEDIUM = 2, LARGE = 3, EXTRA_LARGE = 4;
 
-  import Project from "@/components/projects/Project";
+  import Review from "@/components/reviews/Review";
 
   export default {
-    name: "ProjectsCarousel",
-    components: {Project},
+    name: "ReviewCarousel",
+    components: {Review},
     props: {
-      projects: {
+      reviews: {
         type: Array,
         required: true,
       }
@@ -120,7 +126,7 @@
         let viewportWidth = window.innerWidth;
         let sizes = this.$store.getters.getScreenSizes;
 
-        this.count = this.projects.length;
+        this.count = this.reviews.length;
 
         if (viewportWidth >= sizes.extra_large) {
           this.setMaximalPosition(EXTRA_LARGE);
@@ -135,37 +141,39 @@
     },
     mounted() {
       this.processViewport();
-    },
+    }
   }
 </script>
 
 <style scoped lang="scss">
-.projectsCarousel {
-  width: 100%;
-  margin-bottom: 36px;
-  .arrow {
-    display: inline;
-    .activated {
-      cursor: pointer;
-    }
-  }
-  .body {
-    overflow: hidden;
+  .reviewsCarousel {
     width: 100%;
-    .slider {
-      width: 9999px;
-      transition: 250ms ease-out;
-      .space {
-        display: inline-block;
-        width: 10vw;
-        @media (min-width: $medium) {
-          width: 30px !important;
-        }
-        @media (min-width: $large) {
-          width: 25px !important;
+    margin-bottom: 36px;
+    .bigArrow {
+      display: inline;
+      .activated {
+        cursor: pointer;
+      }
+    }
+    .body {
+      margin-top: 72px;
+      overflow: hidden;
+      width: 100%;
+      .slider {
+        display: flex;
+        width: 9999px;
+        transition: 250ms ease-out;
+        .space {
+          display: inline-block;
+          width: 10vw;
+          @media (min-width: $medium) {
+            width: 30px !important;
+          }
+          @media (min-width: $large) {
+            width: 25px !important;
+          }
         }
       }
     }
   }
-}
 </style>
