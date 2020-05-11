@@ -150,6 +150,29 @@
               </span>
             </div>
           </div>
+          <div class="row feedback" style="margin-top: 72px;">
+            <div class="yellowBackground"></div>
+            <div class="container" style="margin: 60px auto; z-index: 1000;">
+              <div class="row">
+                <div class="col-6 left">
+                  <h1>Контакты</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipisci.
+                  </p>
+                  <div class="contacts">
+                    <span>skwebstudio@gmail.com</span>
+                    <span>+7 967 089 88 99</span>
+                  </div>
+                </div>
+                <div class="col-6 d-flex">
+                  <img
+                      src="/img/illustrations/contacts.svg"
+                      style="height: 100%; margin: 0 auto;" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Slide>
@@ -377,8 +400,50 @@ export default {
     }
   }
   .feedback{
+    position: relative;
+    width: 100vw;
     margin-top: 72px;
-    background-color: $light;
-    padding: 60px 0;
+    background-color: $black;
+    .yellowBackground {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      background-color: $primary;
+      width: 50%;
+      height: initial;
+    }
+    .left {
+      padding-right: 96px;
+      h1 {
+        color: black;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        font-family: 'Open Sans';
+      }
+      p {
+        color: $black-darker;
+        opacity: 0.75;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        font-family: 'Open Sans';
+      }
+      .contacts {
+        margin-top: 64px;
+        span {
+          display: block;
+          color: $black-darker;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          font-family: 'Open Sans';
+          margin-top: 10px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
   }
 </style>
