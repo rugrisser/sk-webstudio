@@ -36,7 +36,7 @@
                 value="7"
                 description="лет на рынке" />
             <SmallFact
-                value="800+"
+                value="900+"
                 description="выполненных проектов" />
             <SmallFact
                 value="200K"
@@ -45,8 +45,8 @@
                 value="0"
                 description="плохих отзывов" />
             <SmallFact
-                value="4"
-                description="раза я подрочил сегодня" />
+                value="6"
+                description="получится если 12/2" />
           </div>
         </div>
       </div>
@@ -134,6 +134,25 @@
         </div>
       </div>
     </Slide>
+    <Slide>
+      <div class="d-flex" style="height: 100%;">
+        <div style="width: 100%; margin: auto;">
+          <div class="container">
+            <div class="row">
+              <span class="smallHeading">
+                Оставить заявку
+              </span>
+            </div>
+            <div class="row">
+              <span class="bigHeading">
+                Напиши нам
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Slide>
+    <Footer />
   </div>
 </template>
 
@@ -145,6 +164,7 @@ import SmallFact from "@/components/SmallFact";
 import Direction from "@/components/Direction";
 import ProjectsCarousel from "@/components/projects/ProjectsCarousel";
 import ReviewCarousel from "@/components/reviews/ReviewsCarousel";
+import Footer from "@/components/Footer";
 
 class Employer {
   constructor(name, description, image) {
@@ -174,6 +194,7 @@ class Review {
 export default {
   name: 'Home',
   components: {
+    Footer,
     ReviewCarousel,
     ProjectsCarousel,
     Direction,
@@ -309,11 +330,13 @@ export default {
   .smallHeading {
     color: $primary;
     font-size: 24px;
+    font-weight: 500;
     font-family: 'Open Sans';
   }
   .bigHeading {
     color: $light;
     font-size: 48px;
+    font-weight: 500;
     font-family: 'Oswald';
     text-transform: uppercase;
   }
@@ -349,5 +372,10 @@ export default {
     .activated {
       cursor: pointer;
     }
+  }
+  .feedback{
+    margin-top: 72px;
+    background-color: $light;
+    padding: 60px 0;
   }
 </style>
