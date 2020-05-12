@@ -252,29 +252,74 @@ export default {
       },
       employees: [
         new Employer(
-          'Test',
-          'Lorem ipsum dolor',
+          'Владимир Яфаров',
+          'Основатель студии / CEO',
           '/img/employees/1.jpg'
         ),
         new Employer(
-          'Test',
-          'Lorem ipsum dolor',
+          'Эмиль Насыров',
+          'Сооснователь / CIO',
           '/img/employees/2.jpg'
         ),
         new Employer(
-          'Test',
-          'Lorem ipsum',
+          'Фаррух Исматов',
+          'Главный менеджер / СОО',
           '/img/employees/3.jpg'
         ),
         new Employer(
-          'Test',
-          'Lorem ipsum dolor',
+          'Михаил Конюх',
+          'Разработчик',
           '/img/employees/4.jpg'
         ),
         new Employer(
-          'Test',
-          'Lorem ipsum',
+          'Георгий Шишов',
+          'Дизайнер',
           '/img/employees/5.jpg'
+        ),
+        new Employer(
+          'Диана Колпакова',
+          'Разработчик',
+          '/img/employees/6.jpg'
+        ),
+        new Employer(
+          'Дарья Андреева',
+          'SMM',
+          '/img/employees/7.jpg'
+        ),
+        new Employer(
+          'Мария Генчева',
+          'Дизайнер',
+          '/img/employees/8.jpg'
+        ),
+        new Employer(
+          'Дарья Гаврилова',
+          'Менеджер',
+          '/img/employees/9.jpg'
+        ),
+        new Employer(
+          'Александр Цымбалов',
+          'Разработчик',
+          '/img/employees/10.jpg'
+        ),
+        new Employer(
+          'Ярослав Мирошниченко',
+          'Разработчик',
+          '/img/employees/11.jpg'
+        ),
+        new Employer(
+          'Вячеслав Рыжков',
+          'Разработчик',
+          '/img/employees/12.jpg'
+        ),
+        new Employer(
+          'Максим Дмитриев',
+          'Менеджер',
+          '/img/employees/13.jpg'
+        ),
+        new Employer(
+          'Кирилл Харланов',
+          'Менеджер',
+          '/img/employees/14.jpg'
         ),
       ],
       projects: [

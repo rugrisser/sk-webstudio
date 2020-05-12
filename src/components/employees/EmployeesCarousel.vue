@@ -4,7 +4,7 @@
       <div class="slider" :style="'transform: translateX(-' + offset + ');'">
         <div
             v-for="(employee, index) in employers"
-            style="display: inline;"
+            style="display: inline; vertical-align: top;"
             :key="index">
           <Employee
             :name="employee.name"
