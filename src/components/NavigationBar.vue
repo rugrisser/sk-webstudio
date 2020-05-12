@@ -87,4 +87,14 @@
   .background {
     background-color: $panel;
   }
+  @media (max-width: 767px) {
+    .navigationBar {
+      display: none;
+    }
+  }
+  @media (max-height: 473px) {
+    .navigationBar {
+      display: none;
+    }
+  }
 </style>

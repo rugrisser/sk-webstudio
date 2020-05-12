@@ -4,8 +4,11 @@ import App from './App.vue'
 import store from './store'
 import router from './router'
 
+import VueWow from 'vue-wow';
+
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
+Vue.use(VueWow);
 Vue.config.productionTip = false
 
 new Vue({
