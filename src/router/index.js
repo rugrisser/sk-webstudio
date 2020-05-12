@@ -14,6 +14,11 @@ const routes = [
     name: 'Person',
     component: () => import('@/views/Person'),
   },
+  {
+    path: '/allPerson',
+    name: 'AllPerson',
+    component: () => import('@/views/AllPerson'),
+  }
 ]
 
 const router = new VueRouter({
