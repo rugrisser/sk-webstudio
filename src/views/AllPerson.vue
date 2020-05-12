@@ -1,6 +1,6 @@
 <template>
-    <NavigationBar/>
     <div>
+        <NavigationBar/>
         <p>AllPerson</p>
     </div>
 </template>

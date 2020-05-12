@@ -15,6 +15,11 @@ const routes = [
     component: () => import('@/views/Person'),
   },
   {
+    path: '/portfolio/:id',
+    name: 'Portfolio',
+    component: () => import('@/views/Portfolio'),
+  },
+  {
     path: '/allPerson',
     name: 'AllPerson',
     component: () => import('@/views/AllPerson'),
