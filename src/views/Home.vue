@@ -271,6 +271,12 @@ export default {
           4
         ),
         new Employer(
+          'Вадим Циндяйкин',
+          'Ведущий Разработчик',
+          '/img/employees/15.jpg',
+          2
+        ),
+        new Employer(
           'Михаил Бесхитров',
           'Разработчик',
           '/img/employees/4.jpg',
@@ -291,7 +297,8 @@ export default {
         new Employer(
           'Дарья Андреева',
           'SMM',
-          '/img/employees/7.jpg'
+          '/img/employees/7.jpg',
+          8
         ),
         new Employer(
           'Мария Генчева',
@@ -303,7 +310,7 @@ export default {
           'Дарья Гаврилова',
           'Менеджер',
           '/img/employees/9.jpg',
-          8
+          10
         ),
         new Employer(
           'Александр Цымбалов',
@@ -326,7 +333,8 @@ export default {
         new Employer(
           'Максим Дмитриев',
           'Менеджер',
-          '/img/employees/13.jpg'
+          '/img/employees/13.jpg',
+          15
         ),
         new Employer(
           'Кирилл Харланов',
