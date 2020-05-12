@@ -4,7 +4,7 @@
       class="employee"
       :style="'background: url(' + image + ') 100% 100%;'">
     <div>
-      <h1>{{ name }}</h1>
+      <h1>{{ name.replace(' ', '\n') }}</h1>
       <span>{{ description }}</span>
     </div>
   </div>
@@ -67,15 +67,18 @@
       transform: translate(5px, 5px);
       background-color: $primary;
       h1 {
+        white-space: pre-wrap;
         color: $black-darker;
         margin: 0;
         font-size: 24px;
+        margin-top: 8px;
         font-family: 'Open Sans';
       }
       span {
         color: $black-darker;
         opacity: 0.8;
         font-size: 16px;
+        margin-top: 4px;
         font-family: 'Open Sans';
       }
     }
