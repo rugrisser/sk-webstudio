@@ -2,10 +2,12 @@
   <header v-bind:class="['navigationBar']">
     <nav class="container">
       <div class="row d-flex">
-        <img src="/img/logo.svg" height="48px">
-        <span class="title" style="margin: auto 0 auto 18px;">
-          Sk.WebStudio
-        </span>
+        <a style="display: flex; text-decoration: none;" href="/">
+          <img src="/img/logo.svg" height="48px">
+          <span class="title" style="margin: auto 0 auto 18px;">
+            Sk.WebStudio
+          </span>
+        </a>
         <div class="menu">
           <a href="/#">Главная</a>
           <a href="/#team">Команда</a>
