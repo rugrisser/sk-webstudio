@@ -9,6 +9,7 @@
           <Employee
             :name="employee.name"
             :description="employee.description"
+            :personID="employee.personID"
             :image="employee.image" />
           <div class="space"></div>
         </div>

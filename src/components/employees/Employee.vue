@@ -1,5 +1,8 @@
 <template>
-  <div class="employee" :style="'background: url(' + image + ') 100% 100%;'">
+  <div
+      @click="goToPersonPage"
+      class="employee"
+      :style="'background: url(' + image + ') 100% 100%;'">
     <div>
       <h1>{{ name }}</h1>
       <span>{{ description }}</span>
@@ -23,12 +26,22 @@
         type: String,
         required: true,
       },
+      personID: {
+        type: Number,
+        required: true,
+      },
+    },
+    methods: {
+      goToPersonPage() {
+        window.location = '/person/' + this.personID;
+      }
     },
   }
 </script>
 
 <style scoped lang="scss">
   .employee {
+    cursor: pointer;
     display: inline-flex;
     width: 100vw;
     height: 350px;

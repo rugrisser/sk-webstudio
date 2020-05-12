@@ -201,10 +201,11 @@ import Footer from "@/components/Footer";
 import NavigationBar from "@/components/NavigationBar";
 
 class Employer {
-  constructor(name, description, image) {
+  constructor(name, description, image, personID) {
     this.name = name;
     this.description = description;
     this.image = image;
+    this.personID = personID;
   }
 }
 
@@ -254,32 +255,38 @@ export default {
         new Employer(
           'Владимир Яфаров',
           'Основатель студии / CEO',
-          '/img/employees/1.jpg'
+          '/img/employees/1.jpg',
+          3
         ),
         new Employer(
           'Эмиль Насыров',
           'Сооснователь / CIO',
-          '/img/employees/2.jpg'
+          '/img/employees/2.jpg',
+          1
         ),
         new Employer(
           'Фаррух Исматов',
           'Главный менеджер / СОО',
-          '/img/employees/3.jpg'
+          '/img/employees/3.jpg',
+          4
         ),
         new Employer(
-          'Михаил Конюх',
+          'Михаил Бесхитров',
           'Разработчик',
-          '/img/employees/4.jpg'
+          '/img/employees/4.jpg',
+          5
         ),
         new Employer(
           'Георгий Шишов',
           'Дизайнер',
-          '/img/employees/5.jpg'
+          '/img/employees/5.jpg',
+          6
         ),
         new Employer(
           'Диана Колпакова',
           'Разработчик',
-          '/img/employees/6.jpg'
+          '/img/employees/6.jpg',
+          14
         ),
         new Employer(
           'Дарья Андреева',
@@ -289,27 +296,32 @@ export default {
         new Employer(
           'Мария Генчева',
           'Дизайнер',
-          '/img/employees/8.jpg'
+          '/img/employees/8.jpg',
+          7
         ),
         new Employer(
           'Дарья Гаврилова',
           'Менеджер',
-          '/img/employees/9.jpg'
+          '/img/employees/9.jpg',
+          8
         ),
         new Employer(
           'Александр Цымбалов',
           'Разработчик',
-          '/img/employees/10.jpg'
+          '/img/employees/10.jpg',
+          11
         ),
         new Employer(
           'Ярослав Мирошниченко',
           'Разработчик',
-          '/img/employees/11.jpg'
+          '/img/employees/11.jpg',
+          9
         ),
         new Employer(
           'Вячеслав Рыжков',
           'Разработчик',
-          '/img/employees/12.jpg'
+          '/img/employees/12.jpg',
+          13
         ),
         new Employer(
           'Максим Дмитриев',
@@ -319,7 +331,8 @@ export default {
         new Employer(
           'Кирилл Харланов',
           'Менеджер',
-          '/img/employees/14.jpg'
+          '/img/employees/14.jpg',
+          12
         ),
       ],
       projects: [

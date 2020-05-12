@@ -32,6 +32,7 @@
     data() {
       return {
         showBackground: false,
+        eventListener: null,
       }
     },
     mounted() {
@@ -49,7 +50,7 @@
       } else {
         document.querySelector('.navigationBar').classList.add('background');
       }
-    }
+    },
   }
 </script>
 

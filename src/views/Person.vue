@@ -4,7 +4,8 @@
             В данный момент на сайте ведутся техническией работы. Пожалуйста, поспользуйтесь пк версией сайта
         </div>
 
-        <NavigationBar/>
+        <NavigationBar
+            :start-transparent="false"/>
         <div class="container main_division">
 
             <!-- Левая часть -->
@@ -69,9 +70,9 @@
                     <!-- Блок проектов-->
                     <div id="projects" class="project_style1">
                         <div v-for="(img2, index) in persons[id].projects"
-                             :key="index" class="project_style2">
+                             :key="1000 + index" class="project_style2">
                             <div v-for="(img, index) in img2"
-                                 :key="index">
+                                 :key="10000 + index">
                                 <img :src="img[0]" v-on:click="OpenLink(img[1])" style="margin-right: 30px; margin-bottom: 30px; cursor: pointer">
                             </div>
                         </div>
@@ -81,19 +82,19 @@
                     <div id="events" style="display: none">
                         <div class="text_event_style"
                              v-for="(event, index) in persons[id].eventsCompetition"
-                             :key="index">
+                             :key="100000 + index">
                             <img src="/006-winner-5.png" class="image_event_style"/>
                             {{event}}
                         </div>
                         <div class="text_event_style"
                              v-for="(event, index) in persons[id].evetsHack"
-                             :key="index">
+                             :key="1000000 + index">
                             <img src="/002-winner-7.png" class="image_event_style"/>
                             {{event}}
                         </div>
                         <div class="text_event_style"
                              v-for="(event, index) in persons[id].eventSchool"
-                             :key="index">
+                             :key="10000000 + index">
                             <img src="/046-winner-1.png" class="image_event_style"/>
                             {{event}}
                         </div>

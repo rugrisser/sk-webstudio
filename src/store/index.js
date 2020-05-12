@@ -12,12 +12,12 @@ export default new Vuex.Store({
         large: 992,
         extra_large: 1200,
       }
-    }
+    },
   },
   getters: {
     getScreenSizes: state => {
       return state.screen.sizes;
-    }
+    },
   },
   mutations: {
   },
