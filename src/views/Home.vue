@@ -158,8 +158,9 @@
                   <h1>Контакты</h1>
                   <div class="contacts">
                     <span>Telegram: @Sk_Web</span>
-                    <span>skwebstudio@gmail.com</span>
-                    <span>+7 967 089 88 99</span>
+                    <span>E-mail: skwebstudio@gmail.com</span>
+                    <span>Instagram: sk.webstudio</span>
+                    <span>Tel: +7 967 089 88 99</span>
                   </div>
                 </div>
                 <div class="col-6 d-flex">
