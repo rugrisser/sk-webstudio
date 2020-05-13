@@ -21,9 +21,11 @@
             <span class="bigHeading" style="margin: auto 0;">
               Наши сотрудники
             </span>
+            <!--
             <ButtonSecondary style="margin: auto 0 auto auto;">
               Вся команда
             </ButtonSecondary>
+            -->
           </div>
           <div class="row" style="margin-top: 72px;">
             <Carousel :employers="employees" />
@@ -110,12 +112,14 @@
             <span class="bigHeading" style="margin: auto 0;">
               Наши работы
             </span>
+            <!--
             <ButtonSecondary style="margin: auto 0 auto auto;">
               Все работы
               <img
                   style="margin-left: 14px;"
                   src="/img/icons/go_to.svg" height="16px">
             </ButtonSecondary>
+            -->
           </div>
           <div class="row" style="margin-top: 72px;">
             <ProjectsCarousel :projects="projects" />
@@ -189,7 +193,7 @@
 
 <script>
 import Slide from "@/components/Slide";
-import ButtonSecondary from "@/components/buttons/ButtonSecondary";
+// import ButtonSecondary from "@/components/buttons/ButtonSecondary";
 import Carousel from "@/components/employees/EmployeesCarousel";
 import SmallFact from "@/components/SmallFact";
 import Direction from "@/components/Direction";
@@ -234,7 +238,7 @@ export default {
     Direction,
     SmallFact,
     Carousel,
-    ButtonSecondary,
+    // ButtonSecondary,
     Slide
   },
   data() {
