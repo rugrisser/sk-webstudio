@@ -139,7 +139,7 @@
                         [['back-end', 'android', 'web'], ['ml', 'bots', 'database'], ['java', 'kotlin', 'javascript'], ['php', 'lua', 'c++', 'c#'], ['sql', 'vue', 'spring'], ['идейность', 'организованность'],],
                         true,
                         [[["/img/projects/Rectangle46.png", '/'], ["/img/projects/Rectangle42.png", '/']], [["/img/projects/Rectangle43.png", '/'], ["/img/projects/Rectangle45.png", '/']], [["/img/projects/Rectangle41.png", '/'], ["/img/projects/Rectangle44.png", '/']]],
-                        false,
+                        true,
                         ['НТИ Искусственный интеллект финал', 'НТИ Большие данные и машинное обучение финал'],
                         ['BestHack', 'MediaHack', 'SpringHack', 'GameHack', 'Поисково-спасательный хакатон', 'DH Hack'],
                         ['Тинькофф ML', 'Тинькофф DL', 'Samsung IT-School']

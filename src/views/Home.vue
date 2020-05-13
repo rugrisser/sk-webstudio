@@ -31,23 +31,23 @@
           <div class="horizontalLine"></div>
           <div class="row" style="margin-top: 36px;">
             <SmallFact
-                value="20+"
-                description="человек в команде"/>
+                value="23"
+                description="человека в команде"/>
             <SmallFact
-                value="7"
-                description="лет на рынке" />
+                value="2"
+                description="месяца на рынке" />
             <SmallFact
-                value="900+"
+                value="36"
                 description="выполненных проектов" />
             <SmallFact
-                value="200K"
-                description="просмотров на Behance" />
+                value="9"
+                description="хороших отзывов" />
             <SmallFact
                 value="0"
                 description="плохих отзывов" />
             <SmallFact
-                value="6"
-                description="получится если 12/2" />
+                value="5"
+                description="банок ред булла было выпито, пока делался сайт" />
           </div>
         </div>
       </div>
@@ -61,37 +61,37 @@
                 Наши направления
               </h1>
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                Бесспорным преимуществом команды Sk.WebStudio является широкая направленность: мы подарим жизнь Вашему продукты на любом устройстве
               </span>
             </div>
             <div class="directionColumn col-12 col-md-6 col-lg-4 col-xl-4">
               <Direction
                   title="Сайты"
-                  description="Важнейший элемент любого бизнеса. Такой метод взаимодействия значительно упрощает путь клиента."
+                  description="Важнейший элемент любого бизнеса. Такой метод взаимодействия значительно упрощает путь клиента"
                   image="/img/icons/directions/web.svg" />
             </div>
             <div class="directionColumn col-12 col-md-6 col-lg-4 col-xl-4">
               <Direction
                   title="Интернет-магазины"
-                  description="Полноценный и эффективный инструмент повышения продаж. Отличительной особенностью является простота и легкость в использовании."
+                  description="Полноценный и эффективный инструмент повышения продаж. Отличительной особенностью является простота и легкость в использовании"
                   image="/img/icons/directions/shop.svg" />
             </div>
             <div class="directionColumn col-12 col-md-6 col-lg-4 col-xl-4">
               <Direction
                   title="Чат-боты"
-                  description="Простой и эффективный способ быть на связи с любым клиентом. Чат-боты позволяют ответить на вопросы клиента, а при необходимости, помогут связаться со специалистом."
+                  description="Простой и эффективный способ быть на связи с любым клиентом. Чат-боты позволяют ответить на вопросы клиента, а при необходимости, помогут связаться со специалистом"
                   image="/img/icons/directions/chat.svg" />
             </div>
             <div class="directionColumn col-12 col-md-6 col-lg-4 col-xl-4">
               <Direction
                   title="Машинное обучение"
-                  description="Использование алгоритмов машинного обучения позволяет находить закономерность, которая даёт возможность предсказывать различные показатели, что, в свою очередь, приводит к увеличению эффективности компании."
+                  description="Использование алгоритмов машинного обучения позволяет находить закономерность, которая даёт возможность предсказывать различные показатели, что, в свою очередь, приводит к увеличению эффективности компании"
                   image="/img/icons/directions/neural.svg" />
             </div>
             <div class="directionColumn col-12 col-md-6 col-lg-4 col-xl-4">
               <Direction
                   title="Мобильные приложения"
-                  description="Постоянный, быстрый и недорогой способ связи с Вашими клиентами. Мобильные приложения повышают лояльность клиентов и продажи."
+                  description="Постоянный, быстрый и недорогой способ связи с Вашими клиентами. Мобильные приложения повышают лояльность клиентов и продажи"
                   image="/img/icons/directions/app.svg" />
             </div>
           </div>
