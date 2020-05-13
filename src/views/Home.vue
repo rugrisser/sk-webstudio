@@ -34,8 +34,8 @@
                 value="23"
                 description="человека в команде"/>
             <SmallFact
-                value="2"
-                description="месяца на рынке" />
+                value="37"
+                description="хакатонов на нашем счету" />
             <SmallFact
                 value="36"
                 description="выполненных проектов" />
@@ -46,8 +46,8 @@
                 value="0"
                 description="плохих отзывов" />
             <SmallFact
-                value="5"
-                description="банок ред булла было выпито, пока делался сайт" />
+                value="6"
+                description="получится если 12 разделить на 2" />
           </div>
         </div>
       </div>
@@ -156,11 +156,8 @@
               <div class="row">
                 <div class="col-6 left">
                   <h1>Контакты</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipisci.
-                  </p>
                   <div class="contacts">
+                    <span>Telegram: @Sk_Web</span>
                     <span>skwebstudio@gmail.com</span>
                     <span>+7 967 089 88 99</span>
                   </div>
