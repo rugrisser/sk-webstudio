@@ -36,17 +36,17 @@
                 value="23"
                 description="человека в команде"/>
             <SmallFact
-                value="37"
-                description="хакатонов на нашем счету" />
+                value="18"
+                description="хакатонов" />
             <SmallFact
                 value="36"
                 description="выполненных проектов" />
             <SmallFact
-                value="9"
-                description="хороших отзывов" />
+                value="7"
+                description="проектов в разработке" />
             <SmallFact
                 value="0"
-                description="плохих отзывов" />
+                description="заболевших COVID19 в студии" />
             <SmallFact
                 value="6"
                 description="получится если 12 разделить на 2" />
@@ -127,7 +127,7 @@
         </div>
       </div>
     </Slide>
-    <Slide dark>
+    <!--<Slide dark>
       <div class="container d-flex" style="height: 100%;">
         <div style="width: 100%; margin: auto;">
           <div class="row">
@@ -186,7 +186,7 @@
           </div>
         </div>
       </div>
-    </Slide>
+    </Slide> -->
     <Footer />
   </div>
 </template>
@@ -198,7 +198,7 @@ import Carousel from "@/components/employees/EmployeesCarousel";
 import SmallFact from "@/components/SmallFact";
 import Direction from "@/components/Direction";
 import ProjectsCarousel from "@/components/projects/ProjectsCarousel";
-import ReviewCarousel from "@/components/reviews/ReviewsCarousel";
+//import ReviewCarousel from "@/components/reviews/ReviewsCarousel";
 import Footer from "@/components/Footer";
 import NavigationBar from "@/components/NavigationBar";
 
@@ -233,7 +233,7 @@ export default {
   components: {
     NavigationBar,
     Footer,
-    ReviewCarousel,
+    //ReviewCarousel,
     ProjectsCarousel,
     Direction,
     SmallFact,
