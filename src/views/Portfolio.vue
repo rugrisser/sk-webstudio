@@ -63,7 +63,7 @@
     import {Carousel, Slide} from "vue-carousel";
 
     class Portfolio {
-        constructor(what, how, mainAppHeader, mainAppInfo, mainAppImage, graphicEditors, appsPhotos, video) {
+        constructor(mainAppHeader, mainAppInfo, what, how, mainAppImage, graphicEditors, appsPhotos, video) {
             this.what = what;
             this.how = how;
             this.mainAppHeader = mainAppHeader;
@@ -82,31 +82,10 @@
             return {
                 portfolios: [
                     new Portfolio(
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n" +
-                        "                    labore\n" +
-                        "                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum\n" +
-                        "                    dolor\n" +
-                        "                    sit\n" +
-                        "                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\n" +
-                        "                    magna\n" +
-                        "                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n" +
-                        "                    labore\n" +
-                        "                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum\n" +
-                        "                    dolor\n" +
-                        "                    sit\n" +
-                        "                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\n" +
-                        "                    magna\n" +
-                        "                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
-                        "Main header",
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n" +
-                        "                    labore\n" +
-                        "                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum\n" +
-                        "                    dolor\n" +
-                        "                    sit\n" +
-                        "                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore\n" +
-                        "                    magna\n" +
-                        "                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+                        "Подготовка в медицинским тестам",
+                        "Помогает студентам и преподавателям более тщательно подготовиться к медицинским тестам, а также к семинарам. Это призвано помогать студентам с учебой, способствовать более простому и быстрому усвоению материала в такой сложной и важной науке, как медицина. Благодаря этому приложению студент тратит меньше времени на подготовку к тестам, а уровень сдачи тестов остается на том же уровне. Таким образом студент учится эффективнее.",
+                        "Реализовать приложение. Необходимо было создать полноценный it продукт, включающий в себя все этапы разработки: начиная от продумывания сложной архитектуры, заканчивая чтением и разбирательством в чужом коде - что является не самой легкой работой. Необходимо было подумать и о будущих пользователях приложения, и проникнуться в азы  медицины",
+                        "Во время работы над данным кейсом программист столкнулся с некоторыми затруднениями. Так, например, уже после начала работы над проектом выяснилось, что код, который предоставил изначально заказчик, был написан плохо, его было очень сложно поддерживать. Поэтому программистом было принято решение начать проект с нуля и реализовать его сразу качественно, чтобы в дальнейшем не было проблем с поддержкой. Для этого программист продумал и реализовал по-новой архитектуру всего it приложения. Помимо этого программист нарисовал и воплотил в жизнь новый, более юзабилити дизайн. В итоге получился полноценный продукт, которым и по сей день пользуются люди ",
                         "https://s3-alpha-sig.figma.com/img/6c7f/d3e3/7bf38387a6615915d2554ad0cd2a1a5d?Expires=1590364800&Signature=UWKceI1e1VrRzpnKM0jcmUgb0ZamMoRn9kCKw~28iUOLTEQQ4wEDDJpa~7zP5J5zQ-g6JyEDJA28Ad1aYcyTZxQKLdO8O9SZr6liRVsHmUrbHsX~Oots6W-ZoIc-getgqF2be~~v6BvXyodcugLuy5KrPhiLAjZ4i8BQSuASwxrcE14fgW3fzSdpXJ5SlDEXhfDREMsljoWkeocP5fl8Ius1Tdqj0rmah8qNIRJ~IA0sZKuOMgoSAHHVm2M6DggeAX-f1y7giE0r3-gU1mZlqP4~1BSNb4kJQVHZ~kBl5RueE4UENJn5a6LjKYEVuyTecsCayKV1aD6J5jky0YP9Ww__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                         [
                             "https://s3-alpha-sig.figma.com/img/a510/ad58/1c44a0efe05a6d99bb8b9fece8a7064c?Expires=1590364800&Signature=LMy5J8cc1zgavLLVIJERt4rb8unDvDK6SSjoLZN3dlP3XDS78sit1wMDZSckcSvRT~W4ScaVL9UDjPee2cexqFZ3Oa3aGzf5LrYaQ80sk0fta3jDvcLZZHvz4qL2NO25~Fbbn7Wqy7IRtUPOF8jolZPm5IiDUlxcwoP2JOkplBOmXX2liOD-J93SRavLdA-uBXlk~wpeA5rpRdBaI3lu4fWIUbnYIuERFUkadlpMwvH~ScXNfcAAaPIeb8Pd~jBJL9OIk83jZvo48IOYn7qTBA5DrfPcw-HNg6UhLImO000q5zTryJgiLtbVwAcbejGwFCiQIGyU0agOQL3LgjEsIg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
@@ -118,8 +97,33 @@
                             "https://s3-alpha-sig.figma.com/img/1f78/ad05/0c5651bf9d7b3af08a3bbe3704c3ec7d?Expires=1590364800&Signature=XVxy8qF64atVeM~b83Q~i0Ta6W-yGKGdKIKiIuOON~CsgalpDHe27rJmRfr20EE~AFCZ2kWZiIv6lqIUwOGu-sdvKKlRXtH5HrjyFCW0aqhJxBqxS-eJoI~4l-qUNWvbkfscaBn7D-614O7qnyGDtViCGegxmz4mrS8Zji2zviPWqGYjJrDPSlqp~xyjhceHfPU9GB77Ny~buBa-FlEUy-jO2tILnamweCwiR~VBpThwIeFmpmdMwK-G9WZutt5t8x-2mcxIKVlokEU6u1gi7CNdVGc4DdDqqRv1XTBJKO8QVojpQ4y-leurzyYnItoQ7D97U6n1tBAQZSiJo2F8Yw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
                             "https://s3-alpha-sig.figma.com/img/1f78/ad05/0c5651bf9d7b3af08a3bbe3704c3ec7d?Expires=1590364800&Signature=XVxy8qF64atVeM~b83Q~i0Ta6W-yGKGdKIKiIuOON~CsgalpDHe27rJmRfr20EE~AFCZ2kWZiIv6lqIUwOGu-sdvKKlRXtH5HrjyFCW0aqhJxBqxS-eJoI~4l-qUNWvbkfscaBn7D-614O7qnyGDtViCGegxmz4mrS8Zji2zviPWqGYjJrDPSlqp~xyjhceHfPU9GB77Ny~buBa-FlEUy-jO2tILnamweCwiR~VBpThwIeFmpmdMwK-G9WZutt5t8x-2mcxIKVlokEU6u1gi7CNdVGc4DdDqqRv1XTBJKO8QVojpQ4y-leurzyYnItoQ7D97U6n1tBAQZSiJo2F8Yw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
                         ],
-                        "link to video"
+                        ""
                     ),
+                    new Portfolio(
+                        "LinkBridge",
+                        "Создание сайта для передачи ссылки более легким путем тем самым сэкономив вообще драгоценное время .\n" +
+                        "\n" +
+                        "В данном кейсе программисту необходимо было реализовать не просто IT продукт, а полноценный стартап. Необходимо было провести анализ рынка, подтвердить проблему в обществе. Была проведена полноценная подготовительная работа. Уже после нее был составлен концепт приложения. \n" +
+                        "Продукт создавался для определенного круга лиц, именно поэтому получилось сделать максимально удобный и friendly интерфейс.  Идея заключалась в удобной и быстрой передачи ссылки с одного устройства на другой. Основная задача - сделать так, чтобы человек не задумывался о действиях, не тратил драгоценное время\n",
+                        "Создание буфера обмена ссылками. \n" +
+                        "Необходимо было охватить максимальное количество пользователей, поэтому были реализованы приложения и для платформы ios, и для платформы android. Помимо этого необходимо было реализовать сайт связки и передачи информации между устройствами. \n",
+                        "Сделать по сайтам ,как страницы наследники.\n" +
+                        "Во время выполнения данного кейса исполнителю пришлось затронуть большое количество областей программирования. Так, необходимо было разрабатывать приложения под 2 различные платформы, написать сайт и реализовать back-end на php. Помимо этого программист принимал активное участие в маркетинге данного продукта. Зато теперь тот круг людей, который нуждался в данном продукте, может быть спокоен, ведь продукт был реализован специально для максимального их удобства. В то же время в продукте не планируется добавление рекламы или других вещей, которые могут отпугнуть пользователя и испортить в целом картину о продукте. Программисту было важно именно изменить мир, а не просто заработать на этом денег.\n",
+                        "",
+                        [],
+                        [],
+                        ""
+                    ),
+                    new Portfolio(
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        [],
+                        [],
+                        ""
+                    )
                 ]
             }
         }
