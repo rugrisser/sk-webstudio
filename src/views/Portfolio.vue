@@ -5,7 +5,7 @@
             <h1 class="greeting-header">{{portfolios[$route.params.id - 1].mainAppHeader}}</h1>
             <div class="greeting-content">
                 <img class="greeting-img"
-                     :src="portfolios[$route.params.id - 1].mainAppImage"/>
+                     :src="portfolios[$route.params.id - 1].mainAppImage" />
                 <div class="greeting-description">
                     <p>{{portfolios[$route.params.id - 1].mainAppInfo}}</p>
                     <div class="d-inline-flex justify-content-start graphic-editor-list">
@@ -198,8 +198,7 @@
 
     .greeting-img {
         position: relative;
-        width: 50%;
-        height: 36%;
+        width: 30%;
     }
 
     .graphic-editor-list {
