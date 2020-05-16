@@ -159,7 +159,7 @@
     }
 
     .portfolio-greeting {
-        margin-top: 10%;
+        margin-top: 15%;
         background-color: #1C1D2A;
         padding: 0 10% 5% 10%;
     }
