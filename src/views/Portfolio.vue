@@ -1,7 +1,7 @@
 <template>
     <div class="portfolio">
         <NavigationBar/>
-        <section class="container-fluid portfolio-greeting w-100 d-flex flex-column flex-wrap">
+        <section class="container-fluid portfolio-greeting w-100 d-flex  flex-column flex-wrap">
             <h1 class="greeting-header">{{portfolios[$route.params.id - 1].mainAppHeader}}</h1>
             <div class="greeting-content">
                 <img class="greeting-img"
@@ -9,46 +9,54 @@
                 <div class="greeting-description">
                     <p>{{portfolios[$route.params.id - 1].mainAppInfo}}</p>
                     <div class="d-inline-flex justify-content-start graphic-editor-list">
-                        <img v-for="graphicEditor in portfolios[$route.params.id - 1].graphicEditors" :key="graphicEditor"
+                        <img v-for="graphicEditor in portfolios[$route.params.id - 1].graphicEditors"
+                             :key="graphicEditor"
                              :src="graphicEditor" class="graphic-editor"/>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container block">
-            <div class="block-sub-header d-inline-flex">
-                <span>Задача</span>
-                <hr class="ml-3"/>
+        <section class="container-fluid block">
+            <div class="block-title">
+                <div class="block-sub-header d-inline-flex">
+                    <span>Задача</span>
+                    <hr/>
+                </div>
+                <p class="block-header">Что нужно было сделать?</p>
             </div>
-            <p class="block-header">Что нужно было сделать?</p>
             <div class="block-description" id="why-description">
                 <p>{{portfolios[$route.params.id - 1].what}}</p>
             </div>
             <carousel>
-                <slide v-for="app in portfolios[$route.params.id - 1].appPhotos" :key="app" class="d-flex flex-row justify-content-center">
+                <slide v-for="app in portfolios[$route.params.id - 1].appPhotos" :key="app"
+                       class="d-flex flex-row justify-content-center">
                     <img class="app-img"
                          :src="app"/>
                 </slide>
             </carousel>
         </section>
-        <section class="container block">
-            <div class="block-sub-header d-inline-flex">
-                <span>Решение</span>
-                <hr class="ml-3"/>
+        <section class="container-fluid block">
+            <div class="block-title">
+                <div class="block-sub-header d-inline-flex">
+                    <span>Решение</span>
+                    <hr class="ml-3"/>
+                </div>
+                <p class="block-header">как мы это делали?</p>
             </div>
-            <p class="block-header">как мы это делали?</p>
             <div class="block-description">
                 <p>{{portfolios[$route.params.id - 1].how}}</p>
             </div>
         </section>
-        <section class="container block">
-            <div class="block-sub-header d-inline-flex">
-                <span>Результат</span>
-                <hr class="ml-3"/>
+        <section class="container-fluid block">
+            <div class="block-title">
+                <div class="block-sub-header d-inline-flex">
+                    <span>Результат</span>
+                    <hr class="ml-3"/>
+                </div>
+                <p class="block-header">Что у нас получилось?</p>
             </div>
-            <p class="block-header">Что у нас получилось?</p>
             <div class="d-flex justify-content-center">
-                <video width="920" controls="controls" height="518">
+                <video controls="controls">
                     <source :src="portfolios[$route.params.id - 1].video"/>
                 </video>
             </div>
@@ -144,26 +152,29 @@
         position: absolute;
         width: 100%;
         background-color: $black-darker;
-        background-image: url("/img/background/6fd774d7a0ab9193.svg");
+        background-image: url("/img/background/PortfolioBG.svg");
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .portfolio-greeting {
-        margin-top: 100px;
+        margin-top: 10%;
         background-color: #1C1D2A;
-        padding: 50px 140px 50px 140px;
+        padding: 0 10% 5% 10%;
     }
 
     .portfolio-greeting p {
         color: #EBEBF0;
-        font-size: 18px;
+        font-size: 1.27vw;
         opacity: 85%;
     }
 
     .greeting-description {
         display: flex;
         flex-direction: column;
-        margin-left: 50px;
+        margin-left: 5%;
+        max-width: 50%;
     }
 
     .greeting-content {
@@ -173,8 +184,8 @@
 
     .greeting-img {
         position: relative;
-        width: 540px;
-        height: 390px;
+        width: 50%;
+        height: 36%;
     }
 
     .graphic-editor-list {
@@ -182,44 +193,51 @@
     }
 
     .graphic-editor {
-        width: 50px;
-        height: 50px;
-        margin-right: 20px;
+        max-width: 15%;
+        margin-right: 10%;
+        margin-top: auto;
     }
 
     .block {
-        margin-top: 130px;
+        margin-top: 10%;
+    }
+
+    .block-title {
+        margin-left: 10%;
     }
 
     .block-header {
         color: #EBEBF0;
-        font-size: 48px;
+        font-size: 4vw;
         margin-top: 0;
         font-family: Oswald;
     }
 
     .block-sub-header {
         color: #FDDD48;
-        font-size: 24px;
+        font-size: 2vw;
         opacity: 90%;
+        width: 20%;
         font-family: "Open Sans";
     }
 
     .block-sub-header hr {
         color: #FDDD48;
         height: 1px;
-        width: 80px;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: auto;
     }
 
     .greeting-header {
         color: #ffffff;
-        font-size: 48px;
+        font-size: 4vw;
     }
 
     .block-description {
         color: #EBEBF0;
-        max-width: 540px;
-        font-size: 18px;
+        max-width: 50%;
+        font-size: 1.3vw;
         margin-left: auto;
         margin-right: auto;
     }
@@ -229,24 +247,31 @@
     }
 
     .app-img {
-        width: 350px;
-        height: 300px;
-        margin-right: 10px;
+        max-width: 50%;
+        margin-right: 10%;
     }
 
     video {
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 10%;
+        width: 60%;
+        max-height: 100%;
     }
 
     #why-description {
-        margin-bottom: 140px;
+        margin-bottom: 10%;
     }
 
     @media (max-width: 768px) {
         .greeting-content {
             display: flex;
             flex-direction: column;
+            align-items: center;
+        }
+
+        .greeting-header {
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .greeting-img {

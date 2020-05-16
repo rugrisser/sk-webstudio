@@ -1,12 +1,12 @@
 <template>
   <header v-bind:class="['navigationBar']">
-    <nav class="container">
+    <nav class="container-fluid">
       <div class="row d-flex">
-        <img src="/img/logo.svg" height="48px">
+        <img src="/img/logo.svg" id="logo">
         <span class="title" style="margin: auto 0 auto 18px;">
           Sk.WebStudio
         </span>
-        <div class="menu">
+        <div class="menu d-inline-flex">
           <a href="/#">Главная</a>
           <a href="/#team">Команда</a>
           <a href="/#projects">Портфолио</a>
@@ -55,25 +55,31 @@
   .navigationBar {
     z-index: 1000;
     width: 100%;
-    padding: 16px 0;
+    padding: 2% 7%;
     .title {
       color: $light;
-      font-size: 18px;
+      font-size: 1.5vw;
       font-style: normal;
       font-weight: 800;
       font-family: 'Open Sans';
       text-transform: uppercase;
     }
+
+    #logo {
+      width: 5%;
+    }
+
     .menu {
-      margin: auto 0 auto auto;
+      margin: auto 5% auto auto;
       a {
         color: #EBEBF0;
         opacity: 0.75;
         font-family: 'Oswald';
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        margin-right: 40px;
+        font-size: 1.2vw;
+        margin-right: 10%;
+        white-space: nowrap;
         text-decoration: none;
         text-transform: uppercase;
         transition: 300ms ease-out;

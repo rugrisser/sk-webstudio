@@ -1,8 +1,8 @@
 <template>
   <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row d-flex">
-        <img src="/img/logo.svg" height="48px">
+        <img src="/img/logo.svg" id="logo">
         <span class="title" style="margin: auto 0 auto 18px;">
           Sk.WebStudio
         </span>
@@ -41,16 +41,21 @@
 
 <style scoped lang="scss">
 .footer {
-  padding: 36px 0 40px 0;
+  padding: 3% 5% 2% 5%;
   background-color: $panel;
   .title {
     color: $light;
-    font-size: 18px;
+    font-size: 1.3vw;
     font-style: normal;
     font-weight: 800;
     font-family: 'Open Sans';
     text-transform: uppercase;
   }
+
+  #logo {
+    width: 5%;
+  }
+
   .menu {
     margin: auto 0 auto auto;
     a {
@@ -59,7 +64,8 @@
       font-family: 'Oswald';
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
+      white-space: nowrap;
+      font-size: 1.2vw;
       margin-left: 40px;
       text-decoration: none;
       text-transform: uppercase;
@@ -76,8 +82,8 @@
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
-      line-height: 19px;
+      font-size: 1.1vw;
+      line-height: 1.7vw;
     }
   }
 }
