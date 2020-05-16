@@ -53,6 +53,7 @@
 
 <style scoped lang="scss">
   .navigationBar {
+    position: fixed;
     z-index: 1000;
     width: 100%;
     padding: 2% 7%;
