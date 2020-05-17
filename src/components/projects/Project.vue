@@ -50,6 +50,7 @@
       width: 360px !important; // 25
     }
     .description {
+      max-width: 85%;
       padding: 15px 30px 15px 20px;
       margin: 30px 0 auto auto;
       background-color: $primary;
@@ -67,6 +68,16 @@
     font-style: normal;
     font-weight: 500;
     font-family: 'Open Sans';
+    width: 90vw;
+    @media (min-width: $medium) {
+      width: 325px !important; // 30
+    }
+    @media (min-width: $large) {
+      width: 285px !important; // 25
+    }
+    @media (min-width: $extra-large) {
+      width: 345px !important; // 25
+    }
   }
 }
 </style>
