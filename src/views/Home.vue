@@ -353,19 +353,84 @@
                 ],
                 projects: [
                     new Project(
-                        'Подготовка в медицинским тестам',
+                        'Медицинские тесты',
                         'Mobile Application',
-                        '/img/projects/diana_1_1.jpg'
+                        '/img/projects/main7.png'
                     ),
                     new Project(
                         'LinkBridge',
                         'Web And Mobile Application',
-                        '/img/projects/diana_2_4.jpg'
+                        '/img/projects/main4.png'
                     ),
                     new Project(
                         'SlidesCatizer',
                         'Bots And Web Application',
+                        '/img/projects/main6.png'
+                    ),
+                    new Project(
+                        'Приложение для завода Лукойл',
+                        'Mobile Application',
+                        '/img/projects/main1.png'
+                    ),
+                    new Project(
+                        'Выбор досуга',
+                        'Machine Learning',
                         ''
+                    ),
+                    new Project(
+                        'Приложение для Газпром Банк',
+                        'Mobile Application',
+                        '/img/projects/main9.png'
+                    ),
+                    new Project(
+                        'NMC',
+                        'Web Application',
+                        '/img/projects/main3.png'
+                    ),
+                    new Project(
+                        'TradePlus',
+                        'Web Application',
+                        '/img/projects/main12.png'
+                    ),
+                    new Project(
+                        'Smart Life',
+                        'Web Application',
+                        ''
+                    ),
+                    new Project(
+                        'VM CAPITAL',
+                        'Web Application',
+                        ''
+                    ),
+                    new Project(
+                        'Test Palmeri',
+                        'Web Application',
+                        '/img/projects/main10.png'
+                    ),
+                    new Project(
+                        'Happy Partner',
+                        'Web Application',
+                        ''
+                    ),
+                    new Project(
+                        'Гражданская Инициатива',
+                        'Web Application',
+                        ''
+                    ),
+                    new Project(
+                        'Protectimus',
+                        'Web Application',
+                        ''
+                    ),
+                    new Project(
+                        'MoveWice',
+                        'Web Application',
+                        '/img/projects/main11.png'
+                    ),
+                    new Project(
+                        'SplitBill',
+                        'Mobile Application',
+                        '/img/projects/main8.png'
                     )
                 ],
                 reviews: [
