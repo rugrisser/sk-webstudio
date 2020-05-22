@@ -143,7 +143,7 @@
                         'Он - неимоверно талантливый человек, являющийся опорой всех наших разработчиков. Участия в большом количестве крупных проектов и хакатонов принесли Эмилю уникальный и ценный опыт, благодаря которому он не раз являлся экспертом на подобных мероприятиях. Эмиль - один из самых ценных сотрудников, так как является ведущим разработчиком архитектур сложных приложений.',
                         ['back-end', 'android', 'web', 'ml', 'bots', 'database', 'java', 'kotlin', 'javascript', 'php', 'lua', 'c++', 'c#', 'sql', 'vue', 'spring', 'идейность', 'организованность'],
                         true,
-                        [[["/img/projects/main1.png", '/portfolio/4'], ["/img/projects/main9.png", '/portfolio/6']], [["/img/projects/main12.png", '/portfolio/8'], ["/img/projects/main3.png", '/portfolio/7']]],
+                        [[["/img/projects/main1.png", '/portfolio/4'], ["/img/projects/main9.png", '/portfolio/6']], [["/img/projects/main12.png", '/portfolio/8'], ["/img/projects/main3.png", '/portfolio/7']], [["/img/projects/main19.jpg", '/portfolio/5'], ["/img/projects/main18.png", '/portfolio/18']]],
                         false,
                         ['НТИ Искусственный интеллект финал', 'НТИ Большие данные и машинное обучение финал'],
                         ['BestHack', 'MediaHack', 'SpringHack', 'GameHack', 'Поисково-спасательный хакатон', 'DH Hack'],

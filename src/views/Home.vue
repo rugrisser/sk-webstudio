@@ -37,7 +37,7 @@
                         <div class="horizontalLine"></div>
                         <div class="row" style="margin-top: 2vw;">
                             <SmallFact
-                                    value="23"
+                                    value="26"
                                     description="человека в команде"/>
                             <SmallFact
                                     value="18"
@@ -125,7 +125,7 @@
                             </ButtonSecondary>
                             -->
                         </div>
-                        <div class="row" style="margin-top: 3.6vw;">
+                        <div class="row" style="margin-top: 3.6vw; cursor: pointer">
                             <ProjectsCarousel :projects="projects"/>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                         </div>
                         <div class="row feedback" style="margin-top: 3.6vw;">
                             <div class="yellowBackground"></div>
-                            <div class="container" style="margin: 3.2vw auto; z-index: 1000;">
+                            <div class="container" style="margin: 3.2vw auto; z-index: 10;">
                                 <div class="row">
                                     <div class="col-6 left">
                                         <h1>Контакты</h1>
@@ -218,10 +218,11 @@
     }
 
     class Project {
-        constructor(name, description, image) {
+        constructor(name, description, image, projectID) {
             this.name = name;
             this.description = description;
             this.image = image;
+            this.projectID = projectID
         }
     }
 
@@ -353,84 +354,107 @@
                 ],
                 projects: [
                     new Project(
-                        'Медицинские тесты',
+                        'Приложение для завода Лукойл',
                         'Mobile Application',
-                        '/img/projects/main7.png'
+                        '/img/projects/main1.png',
+                        4
                     ),
                     new Project(
                         'LinkBridge',
                         'Web And Mobile Application',
-                        '/img/projects/main4.png'
-                    ),
-                    new Project(
-                        'SlidesCatizer',
-                        'Bots And Web Application',
-                        '/img/projects/main6.png'
-                    ),
-                    new Project(
-                        'Приложение для завода Лукойл',
-                        'Mobile Application',
-                        '/img/projects/main1.png'
-                    ),
-                    new Project(
-                        'Выбор досуга',
-                        'Machine Learning',
-                        ''
-                    ),
-                    new Project(
-                        'Приложение для Газпром Банк',
-                        'Mobile Application',
-                        '/img/projects/main9.png'
-                    ),
-                    new Project(
-                        'NMC',
-                        'Web Application',
-                        '/img/projects/main3.png'
-                    ),
-                    new Project(
-                        'TradePlus',
-                        'Web Application',
-                        '/img/projects/main12.png'
-                    ),
-                    new Project(
-                        'Smart Life',
-                        'Web Application',
-                        ''
-                    ),
-                    new Project(
-                        'VM CAPITAL',
-                        'Web Application',
-                        ''
-                    ),
-                    new Project(
-                        'Test Palmeri',
-                        'Web Application',
-                        '/img/projects/main10.png'
-                    ),
-                    new Project(
-                        'Happy Partner',
-                        'Web Application',
-                        ''
-                    ),
-                    new Project(
-                        'Гражданская Инициатива',
-                        'Web Application',
-                        ''
+                        '/img/projects/main4.png',
+                        2
                     ),
                     new Project(
                         'Protectimus',
                         'Web Application',
-                        ''
+                        '/img/projects/main17.png',
+                        14
+                    ),
+                    new Project(
+                        'Приложение для Газпром Банк',
+                        'Mobile Application',
+                        '/img/projects/main9.png',
+                        6
                     ),
                     new Project(
                         'MoveWice',
                         'Web Application',
-                        '/img/projects/main11.png'
+                        '/img/projects/main11.png',
+                        15
+                    ),
+                    new Project(
+                        'Smart Life',
+                        'Web Application',
+                        '/img/projects/main13.png',
+                        9
+                    ),
+                    new Project(
+                        'TradePlus',
+                        'Web Application',
+                        '/img/projects/main12.png',
+                        8
+                    ),
+                    new Project(
+                        'Happy Partner',
+                        'Web Application',
+                        '/img/projects/main15.png',
+                        12
+                    ),
+                    new Project(
+                        'VM CAPITAL',
+                        'Web Application',
+                        '/img/projects/main14.png',
+                        10
+                    ),
+                    new Project(
+                        'Test Palmeri',
+                        'Web Application',
+                        '/img/projects/main10.png',
+                        11
+                    ),
+                    new Project(
+                        'Выбор досуга',
+                        'Machine Learning',
+                        '/img/projects/main19.jpg',
+                        5
+                    ),
+                    new Project(
+                        'NMC',
+                        'Web Application',
+                        '/img/projects/main3.png',
+                        7
+                    ),
+                    new Project(
+                        'ATB',
+                        'Mobile Application',
+                        '/img/projects/main18.png',
+                        17
+                    ),
+                    new Project(
+                        'Гражданская Инициатива',
+                        'Web Application',
+                        '/img/projects/main16.png',
+                        13
+
+                    ),
+                    new Project(
+                        'Медицинские тесты',
+                        'Mobile Application',
+                        '/img/projects/main7.png',
+                        1
+                    ),
+                    new Project(
+                        'SlidesCatizer',
+                        'Bots And Web Application',
+                        '/img/projects/main6.png',
+                        3
                     ),
                     new Project(
                         'SplitBill',
                         'Mobile Application',
-                        '/img/projects/main8.png'
+                        '/img/projects/main8.png',
+                        16
                     )
                 ],
                 reviews: [

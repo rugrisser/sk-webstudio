@@ -35,7 +35,7 @@
       goToPersonPage() {
         window.location = '/person/' + this.personID;
       }
-    },
+    }
   }
 </script>
 

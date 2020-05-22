@@ -1,5 +1,6 @@
 <template>
-  <div class="project">
+  <div @click="goToProjectPage"
+       class="project">
     <div class="cover" :style="'background: url(' + image + ') 100% 100%;'">
       <div class="description">
         {{ description }}
@@ -24,6 +25,15 @@
       description: {
         type: String,
         required: true,
+      },
+      projectID: {
+        type: Number,
+        required: true,
+      }
+    },
+    methods: {
+      goToProjectPage() {
+        window.location = '/portfolio/' + this.projectID;
       }
     }
   }

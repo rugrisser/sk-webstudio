@@ -9,4 +9,7 @@
     margin: 0;
     padding: 0;
   }
+  .VueCarousel-dot:focus {
+    outline: none !important;
+  }
 </style>

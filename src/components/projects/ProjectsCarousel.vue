@@ -9,7 +9,9 @@
           <Project
             :image="project.image"
             :name="project.name"
-            :description="project.description" />
+            :description="project.description"
+            :projectID="project.projectID"
+          />
           <div class="space"></div>
         </div>
       </div>
