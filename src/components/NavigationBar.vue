@@ -3,8 +3,8 @@
     <nav class="container">
       <div class="row d-flex">
         <a style="display: flex; text-decoration: none;" href="/">
-          <img src="/img/logo.svg" style="max-height: 50vw">
-          <span class="title" style="margin: auto 0 auto 0.95vw;">
+          <img src="/img/logo.svg" height="48px">
+          <span class="title" style="margin: auto 0 auto 18px;">
             Sk.WebStudio
           </span>
         </a>
@@ -20,38 +20,38 @@
 </template>
 
 <script>
-  export default {
-    name: "NavigationBar",
-    props: {
-      startTransparent: {
-        type: Boolean,
-        required: false,
-        default: false,
-      },
-    },
-    data() {
-      return {
-        showBackground: false,
-        eventListener: null,
-      }
-    },
-    mounted() {
-      if (this.startTransparent) {
-        this.showBackground = true;
-        window.addEventListener('scroll', function () {
-          if (window.scrollY >= window.innerHeight) {
-            this.showBackground = true;
-            document.querySelector('.navigationBar').classList.add('background');
-          } else {
-            this.showBackground = false;
-            document.querySelector('.navigationBar').classList.remove('background');
-          }
-        });
-      } else {
-        document.querySelector('.navigationBar').classList.add('background');
-      }
-    },
-  }
+    export default {
+        name: "NavigationBar",
+        props: {
+            startTransparent: {
+                type: Boolean,
+                required: false,
+                default: false,
+            },
+        },
+        data() {
+            return {
+                showBackground: false,
+                eventListener: null,
+            }
+        },
+        mounted() {
+            if (this.startTransparent) {
+                this.showBackground = true;
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY >= window.innerHeight) {
+                        this.showBackground = true;
+                        document.querySelector('.navigationBar').classList.add('background');
+                    } else {
+                        this.showBackground = false;
+                        document.querySelector('.navigationBar').classList.remove('background');
+                    }
+                });
+            } else {
+                document.querySelector('.navigationBar').classList.add('background');
+            }
+        },
+    }
 </script>
 
 <style scoped lang="scss">
@@ -59,30 +59,25 @@
     position: fixed;
     z-index: 1000;
     width: 100%;
-    padding: 2% 7%;
-    max-height: 12vh;
+    padding: 16px 0;
     .title {
       color: $light;
-      font-size: 1.5vw;
+      font-size: 18px;
       font-style: normal;
       font-weight: 800;
       font-family: 'Open Sans';
       text-transform: uppercase;
     }
-    #logo {
-      width: 5%;
-    }
     .menu {
-      margin: auto 5% auto auto;
+      margin: auto 0 auto auto;
       a {
         color: #EBEBF0;
         opacity: 0.75;
         font-family: 'Oswald';
         font-style: normal;
         font-weight: 500;
-        font-size: 1.2vw;
-        margin-right: 10%;
-        white-space: nowrap;
+        font-size: 16px;
+        margin-right: 40px;
         text-decoration: none;
         text-transform: uppercase;
         transition: 300ms ease-out;
@@ -95,5 +90,15 @@
   }
   .background {
     background-color: $panel;
+  }
+  @media (max-width: 767px) {
+    .navigationBar {
+      display: none;
+    }
+  }
+  @media (max-height: 473px) {
+    .navigationBar {
+      display: none;
+    }
   }
 </style>

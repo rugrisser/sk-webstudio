@@ -324,8 +324,8 @@
 
     .portfolio-greeting p {
         color: #EBEBF0;
-        font-size: 1.27vw;
-        opacity: 85%;
+        font-size: 2vh;
+        opacity: 0.85;
     }
 
     .greeting-description {
@@ -373,7 +373,7 @@
     .block-sub-header {
         color: #FDDD48;
         font-size: 2vw;
-        opacity: 90%;
+        opacity: 0.9;
         width: 20%;
         font-family: "Open Sans";
     }
@@ -387,20 +387,22 @@
     }
 
     .greeting-header {
+        font-family: 'Open Sans';
+        font-weight: bold;
         color: #ffffff;
-        font-size: 4vw;
+        font-size: 48px;
     }
 
     .block-description {
         color: #EBEBF0;
         max-width: 50%;
-        font-size: 1.3vw;
+        font-size: 2vh;
         margin-left: auto;
         margin-right: auto;
     }
 
     .block-description p {
-        opacity: 85%;
+        opacity: 0.85;
     }
 
     .app-img {
