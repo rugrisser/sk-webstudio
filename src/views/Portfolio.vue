@@ -1,7 +1,7 @@
 <template>
     <div class="portfolio">
         <div class="screenError">
-            <span>Вы из будущего? Если нет, то мобильная версия еще в разработке</span>
+            <span>Вы из будущего? Если нет, то мобильная версия еще в разработке. Вы всегда можете оценить наш сайт с Вашего ПК</span>
         </div>
         <NavigationBar/>
         <section class="container-fluid portfolio-greeting w-100 d-flex  flex-column flex-wrap">
@@ -327,8 +327,8 @@
 
     .portfolio-greeting p {
         color: #EBEBF0;
-        font-size: 1.27vw;
-        opacity: 85%;
+        font-size: 2vh;
+        opacity: 0.85;
     }
 
     .greeting-description {
@@ -376,7 +376,7 @@
     .block-sub-header {
         color: #FDDD48;
         font-size: 2vw;
-        opacity: 90%;
+        opacity: 0.9;
         width: 20%;
         font-family: "Open Sans";
     }
@@ -390,20 +390,22 @@
     }
 
     .greeting-header {
+        font-family: 'Open Sans';
+        font-weight: bold;
         color: #ffffff;
-        font-size: 4vw;
+        font-size: 48px;
     }
 
     .block-description {
         color: #EBEBF0;
         max-width: 50%;
-        font-size: 1.3vw;
+        font-size: 2vh;
         margin-left: auto;
         margin-right: auto;
     }
 
     .block-description p {
-        opacity: 85%;
+        opacity: 0.85;
     }
 
     .app-img {
@@ -448,7 +450,8 @@
             margin-left: 0;
         }
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 730px) {
         .main_division {
             display: none;
         }
@@ -456,4 +459,13 @@
             display: flex;
         }
     }
+    @media (max-height: 460px) {
+        .main_division {
+            display: none;
+        }
+        .screenError {
+            display: flex;
+        }
+    }
+
 </style>

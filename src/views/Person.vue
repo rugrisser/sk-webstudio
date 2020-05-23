@@ -1,7 +1,7 @@
 <template>
     <div class="person" id="main">
         <div class="screenError">
-            <span>Вы из будущего? Если нет, то мобильная версия еще в разработке</span>
+            <span>Вы из будущего? Если нет, то мобильная версия еще в разработке. Вы всегда можете оценить наш сайт с Вашего ПК</span>
         </div>
 
         <NavigationBar/>
@@ -399,8 +399,7 @@
         color: #EBEBF0;
         font-family: "Open Sans";
         font-weight: 500;
-        font-size: 1vw;
-        line-height: 1.3vw;
+        font-size: 2vh;
         margin: 0;
     }
 
@@ -409,8 +408,7 @@
         font-family: Oswald;
         font-style: normal;
         font-weight: normal;
-        font-size: 1.5vw;
-        line-height: 1.8vw;
+        font-size: 3vh;
         margin-top: 4.3vw;
         margin-right: 1vw;
     }
@@ -419,8 +417,7 @@
         color: #FDDD48;
         font-family: "Open Sans";
         font-weight: 500;
-        font-size: 1.27vw;
-        line-height: 1.8vw;
+        font-size: 2.5vh;
         margin: 0;
     }
 
@@ -429,16 +426,15 @@
         font-weight: 500;
         font-family: Oswald;
         letter-spacing: 0.03em;
-        font-size: 1vw;
+        font-size: 2.5vh;
     }
 
     .name_style {
         color: #EBEBF0;
         font-family: "Open Sans";
         font-weight: 500;
-        font-size: 2.7vw;
-        line-height: 2.4vw;
-        margin-bottom: 0.6vw;
+        font-size: 4.5vh;
+        margin-bottom: 0;
         margin-top: 0;
     }
 
@@ -446,8 +442,7 @@
         font-family: "Open Sans";
         font-style: normal;
         font-weight: normal;
-        font-size: 0.9vw;
-        line-height: 1.1vw;
+        font-size: 1.5vh;
         color: #EBEBF0;
         margin: 0;
         letter-spacing: 0.03em;
@@ -463,8 +458,7 @@
         font-family: Oswald;
         font-style: normal;
         font-weight: normal;
-        font-size: 1.3vw;
-        line-height: 1.5vw;
+        font-size: 2vh;
         margin-bottom: 1.2vw;
     }
 
@@ -474,8 +468,7 @@
         font-family: Oswald;
         font-style: normal;
         font-weight: 500;
-        font-size: 1.27vw;
-        line-height: 1.2;
+        font-size: 2.5vh;
         border-top: none;
         border-right: none;
         border-left: none;
@@ -557,7 +550,16 @@
             max-width: 90%;
         }
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 730px) {
+        .main_division {
+            display: none;
+        }
+        .screenError {
+            display: flex;
+        }
+    }
+    @media (max-height: 460px) {
         .main_division {
             display: none;
         }

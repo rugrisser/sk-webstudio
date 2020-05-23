@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="screenError">
-            <span>Вы из будущего? Если нет, то мобильная версия еще в разработке</span>
+            <span>Вы из будущего? Если нет, то мобильная версия еще в разработке. Вы всегда можете оценить наш сайт с Вашего ПК</span>
         </div>
         <NavigationBar start-transparent/>
         <div class="main_div_home">
@@ -657,7 +657,15 @@
         }
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 730px) {
+        .main_div_home {
+            display: none;
+        }
+        .screenError {
+            display: flex;
+        }
+    }
+    @media (max-height: 460px) {
         .main_div_home {
             display: none;
         }

@@ -1,9 +1,9 @@
 <template>
-  <footer class="footer">
+  <footer class="footer mFooter">
     <div class="container">
       <div class="row d-flex">
         <img src="/img/logo.svg" style="max-height: 50vw">
-        <span class="title" style="margin: auto 0 auto 0.95vw;">
+        <span class="title">
           Sk.WebStudio
         </span>
         <div class="menu">
@@ -13,7 +13,7 @@
           <a href="#">О проекте</a>
         </div>
       </div>
-      <div class="additional row d-flex" style="margin-top: 1vw;">
+      <div class="additional row d-flex" style="margin-top: 2vh;">
         <span>
           Copyright © 2020.
         </span>
@@ -21,7 +21,7 @@
           +7 967 089 88 99
         </span>
       </div>
-      <div class="additional row d-flex" style="margin-top: 0.7vw;">
+      <div class="additional row d-flex">
         <span>
           All Rights Reserved
         </span>
@@ -45,11 +45,12 @@
   background-color: $panel;
   .title {
     color: $light;
-    font-size: 1.9vw;
+    font-size: 3vh;
     font-style: normal;
     font-weight: 800;
     font-family: 'Open Sans';
     text-transform: uppercase;
+    margin: 1vh 0 1vh 1vw;
   }
   .menu {
     margin: auto 0 auto auto;
@@ -59,7 +60,7 @@
       font-family: 'Oswald';
       font-style: normal;
       font-weight: 500;
-      font-size: 1.5vw;
+      font-size: 2.5vh;
       margin-left: 4vw;
       text-decoration: none;
       text-transform: uppercase;
@@ -76,9 +77,14 @@
       font-family: 'Open Sans';
       font-style: normal;
       font-weight: 500;
-      font-size: 1.6vw;
+      font-size: 2vh;
       line-height: 1.9vw;
     }
+  }
+}
+@media (max-width: 630px) {
+  .mFooter {
+    display: none;
   }
 }
 </style>
