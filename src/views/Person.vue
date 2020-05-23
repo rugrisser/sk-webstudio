@@ -1,7 +1,11 @@
 <template>
     <div class="person" id="main">
         <div class="screenError">
-            <span>Вы из будущего? Если нет, то мобильная версия еще в разработке. Вы всегда можете оценить наш сайт с Вашего ПК</span>
+            <div style="display: flex; flex-direction: column; margin: auto; font-weight: bold">
+                <span>Вы из будущего?</span>
+                <span>Если нет, то мобильная версия еще в разработке.</span>
+                <span>Вы всегда можете оценить наш сайт с Вашего ПК</span>
+            </div>
         </div>
 
         <NavigationBar/>
@@ -387,12 +391,14 @@
     }
 
     .screenError {
+        height: 100vh;
+        width: 100vw;
         display: none;
-        color: green;
-        background: #FFFFFF;
-        font-size: 5vw;
-        height: 100%;
-        width: 100%;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-size: 4vh;
+        background: url("/img/background.jpg") 100% 100%;
     }
 
     .about_person_style {

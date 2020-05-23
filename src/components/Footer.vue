@@ -82,7 +82,12 @@
     }
   }
 }
-@media (max-width: 630px) {
+@media (max-width: 730px) {
+  .mFooter {
+    display: none;
+  }
+}
+@media (max-height: 460px) {
   .mFooter {
     display: none;
   }

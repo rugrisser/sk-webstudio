@@ -1,7 +1,11 @@
 <template>
     <div class="home">
         <div class="screenError">
-            <span>Вы из будущего? Если нет, то мобильная версия еще в разработке. Вы всегда можете оценить наш сайт с Вашего ПК</span>
+            <div style="display: flex; flex-direction: column; margin: auto; font-weight: bold">
+                <span>Вы из будущего?</span>
+                <span>Если нет, то мобильная версия еще в разработке.</span>
+                <span>Вы всегда можете оценить наш сайт с Вашего ПК</span>
+            </div>
         </div>
         <NavigationBar start-transparent/>
         <div class="main_div_home">
@@ -436,7 +440,6 @@
                         'Web Application',
                         '/img/projects/main16.png',
                         13
-
                     ),
                     new Project(
                         'Медицинские тесты',
@@ -496,14 +499,20 @@
 
 <style lang="scss">
     .screenError {
+        height: 100vh;
+        width: 100vw;
         display: none;
-        color: green;
-        background: #FFFFFF;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-size: 4vh;
+        background: url("/img/background.jpg") 100% 100%;
     }
 
     .main_div_home {
         display: block;
     }
+
     .home {
         background-color: $black-darker;
         margin: auto;
@@ -665,12 +674,13 @@
             display: flex;
         }
     }
+
     @media (max-height: 460px) {
         .main_div_home {
             display: none;
         }
         .screenError {
-            display: flex;
+            display: block;
         }
     }
 </style>

@@ -1,69 +1,75 @@
 <template>
     <div class="portfolio">
         <div class="screenError">
-            <span>Вы из будущего? Если нет, то мобильная версия еще в разработке. Вы всегда можете оценить наш сайт с Вашего ПК</span>
+            <div style="display: flex; flex-direction: column; margin: auto; font-weight: bold">
+                <span>Вы из будущего?</span>
+                <span>Если нет, то мобильная версия еще в разработке.</span>
+                <span>Вы всегда можете оценить наш сайт с Вашего ПК</span>
+            </div>
         </div>
         <NavigationBar/>
-        <section class="container-fluid portfolio-greeting w-100 d-flex  flex-column flex-wrap">
-            <h1 class="greeting-header">{{portfolios[$route.params.id - 1].mainAppHeader}}</h1>
-            <div class="greeting-content">
-                <img class="greeting-img"
-                     :src="portfolios[$route.params.id - 1].mainAppImage" />
-                <div class="greeting-description">
-                    <p>{{portfolios[$route.params.id - 1].mainAppInfo}}</p>
-                    <div class="d-inline-flex justify-content-start graphic-editor-list">
-                        <img v-for="graphicEditor in portfolios[$route.params.id - 1].graphicEditors"
-                             :key="graphicEditor"
-                             :src="graphicEditor" class="graphic-editor"/>
+        <div class="mainPortfolio">
+            <section class="container-fluid portfolio-greeting w-100 d-flex  flex-column flex-wrap">
+                <h1 class="greeting-header">{{portfolios[$route.params.id - 1].mainAppHeader}}</h1>
+                <div class="greeting-content">
+                    <img class="greeting-img"
+                         :src="portfolios[$route.params.id - 1].mainAppImage"/>
+                    <div class="greeting-description">
+                        <p>{{portfolios[$route.params.id - 1].mainAppInfo}}</p>
+                        <div class="d-inline-flex justify-content-start graphic-editor-list">
+                            <img v-for="graphicEditor in portfolios[$route.params.id - 1].graphicEditors"
+                                 :key="graphicEditor"
+                                 :src="graphicEditor" class="graphic-editor"/>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="container-fluid block">
-            <div class="block-title">
-                <div class="block-sub-header d-inline-flex">
-                    <span>Задача</span>
-                    <hr/>
+            </section>
+            <section class="container-fluid block">
+                <div class="block-title">
+                    <div class="block-sub-header d-inline-flex">
+                        <span>Задача</span>
+                        <hr/>
+                    </div>
+                    <p class="block-header">Что нужно было сделать?</p>
                 </div>
-                <p class="block-header">Что нужно было сделать?</p>
-            </div>
-            <div class="block-description" id="why-description">
-                <p>{{portfolios[$route.params.id - 1].what}}</p>
-            </div>
-            <carousel>
-                <slide v-for="app in portfolios[$route.params.id - 1].appPhotos" :key="app"
-                       class="d-flex flex-row justify-content-center" style="outline: none !important;">
-                    <img class="app-img"
-                         :src="app"/>
-                </slide>
-            </carousel>
-        </section>
-        <section class="container-fluid block" style="margin-bottom: 10%">
-            <div class="block-title">
-                <div class="block-sub-header d-inline-flex">
-                    <span>Решение</span>
-                    <hr class="ml-3"/>
+                <div class="block-description" id="why-description">
+                    <p>{{portfolios[$route.params.id - 1].what}}</p>
                 </div>
-                <p class="block-header">Как мы это делали?</p>
-            </div>
-            <div class="block-description">
-                <p>{{portfolios[$route.params.id - 1].how}}</p>
-            </div>
-        </section>
-        <section class="container-fluid block" v-if="portfolios[$route.params.id-1].video">
-            <div class="block-title">
-                <div class="block-sub-header d-inline-flex">
-                    <span>Результат</span>
-                    <hr class="ml-3"/>
+                <carousel>
+                    <slide v-for="app in portfolios[$route.params.id - 1].appPhotos" :key="app"
+                           class="d-flex flex-row justify-content-center" style="outline: none !important;">
+                        <img class="app-img"
+                             :src="app"/>
+                    </slide>
+                </carousel>
+            </section>
+            <section class="container-fluid block" style="margin-bottom: 10%">
+                <div class="block-title">
+                    <div class="block-sub-header d-inline-flex">
+                        <span>Решение</span>
+                        <hr class="ml-3"/>
+                    </div>
+                    <p class="block-header">Как мы это делали?</p>
                 </div>
-                <p class="block-header">Что у нас получилось?</p>
-            </div>
-            <div class="d-flex justify-content-center">
-                <video controls="controls">
-                    <source :src="portfolios[$route.params.id - 1].video"/>
-                </video>
-            </div>
-        </section>
+                <div class="block-description">
+                    <p>{{portfolios[$route.params.id - 1].how}}</p>
+                </div>
+            </section>
+            <section class="container-fluid block" v-if="portfolios[$route.params.id-1].video">
+                <div class="block-title">
+                    <div class="block-sub-header d-inline-flex">
+                        <span>Результат</span>
+                        <hr class="ml-3"/>
+                    </div>
+                    <p class="block-header">Что у нас получилось?</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <video controls="controls">
+                        <source :src="portfolios[$route.params.id - 1].video"/>
+                    </video>
+                </div>
+            </section>
+        </div>
         <Footer/>
     </div>
 </template>
@@ -116,7 +122,7 @@
                         "/img/projects/main4.png",
                         ["/img/projects/skills/java.png", "/img/projects/skills/react.png", "/img/projects/skills/javascript.png"],
                         ["/img/projects/main4.png", "/img/projects/diana/pr3_1.jpg", "/img/projects/diana/pr3_2.jpg", "/img/projects/diana/pr3_3.jpg",
-                        "/img/projects/diana/linkBridge2.jpg", "/img/projects/diana/linkBridge3.jpg", "/img/projects/diana/linkBridge4.jpg", "/img/projects/diana/linkBridge5.jpg"],
+                            "/img/projects/diana/linkBridge2.jpg", "/img/projects/diana/linkBridge3.jpg", "/img/projects/diana/linkBridge4.jpg", "/img/projects/diana/linkBridge5.jpg"],
                         "https://mkc-mkc.github.io/vid/video-placeholder.mp4"
                     ),
                     new Portfolio(
@@ -128,7 +134,6 @@
                         ["/img/projects/skills/google.png", "/img/projects/skills/python.png", "/img/projects/skills/telegram.png"],
                         ["/img/projects/main6.png"],
                         false
-
                     ),
                     new Portfolio(
                         "Приложение для завода компании Лукойл",
@@ -305,7 +310,7 @@
         font-family: "Open Sans";
     }
 
-    button.VueCarousel-dot{
+    button.VueCarousel-dot {
         outline: none;
     }
 
@@ -412,13 +417,16 @@
         max-width: 50%;
         margin-right: 10%;
     }
+
     .screenError {
+        height: 100vh;
+        width: 100vw;
         display: none;
-        color: green;
-        background: #FFFFFF;
-        font-size: 5vw;
-        height: 100%;
-        width: 100%;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-size: 4vh;
+        background: url("/img/background.jpg") 100% 100%;
     }
 
     video {
@@ -452,15 +460,16 @@
     }
 
     @media (max-width: 730px) {
-        .main_division {
+        .mainPortfolio {
             display: none;
         }
         .screenError {
             display: flex;
         }
     }
+
     @media (max-height: 460px) {
-        .main_division {
+        .mainPortfolio {
             display: none;
         }
         .screenError {
