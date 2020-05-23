@@ -388,7 +388,7 @@
 
     .screenError {
         display: none;
-        color: red;
+        color: green;
         background: #FFFFFF;
         font-size: 5vw;
         height: 100%;
@@ -555,6 +555,14 @@
     @media (max-width: 1200px) {
         .image_style {
             max-width: 90%;
+        }
+    }
+    @media (max-width: 600px) {
+        .main_division {
+            display: none;
+        }
+        .screenError {
+            display: flex;
         }
     }
 </style>

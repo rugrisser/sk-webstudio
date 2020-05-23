@@ -1,5 +1,8 @@
 <template>
     <div class="portfolio">
+        <div class="screenError">
+            <span>Вы из будущего? Если нет, то мобильная версия еще в разработке</span>
+        </div>
         <NavigationBar/>
         <section class="container-fluid portfolio-greeting w-100 d-flex  flex-column flex-wrap">
             <h1 class="greeting-header">{{portfolios[$route.params.id - 1].mainAppHeader}}</h1>
@@ -407,6 +410,14 @@
         max-width: 50%;
         margin-right: 10%;
     }
+    .screenError {
+        display: none;
+        color: green;
+        background: #FFFFFF;
+        font-size: 5vw;
+        height: 100%;
+        width: 100%;
+    }
 
     video {
         position: relative;
@@ -435,6 +446,14 @@
         }
         .greeting-description {
             margin-left: 0;
+        }
+    }
+    @media (max-width: 600px) {
+        .main_division {
+            display: none;
+        }
+        .screenError {
+            display: flex;
         }
     }
 </style>

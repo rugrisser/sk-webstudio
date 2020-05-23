@@ -497,7 +497,7 @@
 <style lang="scss">
     .screenError {
         display: none;
-        color: red;
+        color: green;
         background: #FFFFFF;
     }
 
@@ -657,12 +657,12 @@
         }
     }
 
-    //@media (max-width: 767px) {
-      //  .main_div_home {
-        //    display: none;
-        //}
-        //.screenError {
-          //  display: flex;
-        //}
-    //}
+    @media (max-width: 600px) {
+        .main_div_home {
+            display: none;
+        }
+        .screenError {
+            display: flex;
+        }
+    }
 </style>
