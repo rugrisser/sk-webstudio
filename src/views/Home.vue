@@ -267,13 +267,13 @@
                 employees: [
                     new Employer(
                         'Владимир Яфаров',
-                        'Основатель студии / CEO',
+                        'CEO',
                         '/img/employees/1.jpg',
                         3
                     ),
                     new Employer(
                         'Эмиль Насыров',
-                        'Сооснователь / CIO',
+                        'CIO',
                         '/img/employees/2.jpg',
                         1
                     ),
