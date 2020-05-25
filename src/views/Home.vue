@@ -42,19 +42,19 @@
                         <div class="row" style="margin-top: 2vw;">
                             <SmallFact
                                     value="26"
-                                    description="человека в команде"/>
+                                    description="человек в команде"/>
                             <SmallFact
                                     value="18"
                                     description="хакатонов"/>
                             <SmallFact
-                                    value="36"
+                                    value="20+"
                                     description="выполненных проектов"/>
                             <SmallFact
                                     value="7"
                                     description="проектов в разработке"/>
                             <SmallFact
                                     value="0"
-                                    description="заболевших COVID19 в студии"/>
+                                    description="заболевших COVID-19 в студии"/>
                             <SmallFact
                                     value="6"
                                     description="получится если 12 разделить на 2"/>
@@ -113,7 +113,7 @@
                     <div style="width: 100%; margin: auto;">
                         <div class="row">
             <span class="smallHeading">
-              Протфолио
+              Портфолио
             </span>
                         </div>
                         <div class="row d-flex">

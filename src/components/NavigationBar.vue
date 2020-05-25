@@ -12,7 +12,7 @@
           <a href="/#">Главная</a>
           <a href="/#team">Команда</a>
           <a href="/#projects">Портфолио</a>
-          <a href="#">О проекте</a>
+          <a href="/#projects">О проекте</a>
         </div>
       </div>
     </nav>
